@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Čtenářský deník</title>
+    <!-- <link rel="stylesheet" href="/static/styles.css"> -->
+</head>
+<body>
+
+<header>
+    <h1>Zadej novou knihu:</h1>
+</header>
+
+<main>
+    <form action="/submit_book/" method="post">
+        <label for="title">Kniha:</label><br>
+        <input type="text" id="title" name="title" required><br>
+        <label for="author">Autor:</label><br>
+        <input type="text" id="author" name="author" required><br>
+        <label for="plot">Obsah:</label><br>
+        <textarea id="plot" name="plot" rows="5" required></textarea><br>
+        <input type="submit" value="Hotovo">
+    </form>
+    <a href="/all_books/"><button>Seznam knih</button></a>
+</main>
+
+</body>
+</html>
